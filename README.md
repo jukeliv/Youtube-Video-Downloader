@@ -1,8 +1,10 @@
-APP Made by OverchargedDev
+**APP Made by: [Me](https://twitter.com/KillerBeanFan2)**
 
-#Python Libs
-argparse
-pytube
+## Python Libs
+- argparse
+- pytube
 
-#How to use
-just write down onto your terminal `python3 main.py -url "PUT YOUR URL HERE :)" ` and you will be ready to go
+## How to use
+- step 1: open terminal
+- step 2: write down `python3 main.py --url "PUT HERE YOUR URL"`
+- step 3: wait until your file is fully downloaded :)
