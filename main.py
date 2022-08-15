@@ -1,8 +1,10 @@
+import os
+import argparse
+
 from unicodedata import name
 from pytube import YouTube
-import os
+from os.path import exists
 from platform import system
-import argparse
 
 def cls():
     try:
@@ -27,8 +29,10 @@ def __main__():
         yt = YouTube(args.url)#get vid data
         streams = yt.streams.filter(progressive=True,file_extension="mp4",resolution=args.res)#filter files by mp4
 
-        if(os.path.exists("OUTPUT") is False):
+        if(exists("OUTPUT") is False):
             os.mkdir("OUTPUT")
+        if(exists("OUTPUT/"+yt.title.upper()+"_"+args.res+".mp4") is True):
+            assert False,"VIDEO ALREADY DOWNLOADED"
 
         yt.streams.get_by_itag(streams[0].itag).download(output_path="OUTPUT/", filename=yt.title.upper()+"_"+args.res+".mp4")#download video
     except RuntimeError:

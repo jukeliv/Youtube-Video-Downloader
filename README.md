@@ -7,9 +7,8 @@
 
 ## How to use
 - step 1: open terminal
-- step 2: write down `python3 main.py --url "PUT HERE YOUR URL --"PUT VID RES HERE"`
+- step 2: write down `python3 main.py --url "PUT HERE YOUR URL --"PUT RES HERE"`
 - step 3: wait until your file is fully downloaded :)
 
 ## **HELP**
-- if you have any problem
-- write `python3 main.py -h`
+- write `python3 main.py -h` to see what every thing does and examples
