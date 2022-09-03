@@ -14,7 +14,7 @@ def cls():
         else:
             os.system('clear')
     except OSError:
-        assert False, "UNKNOW OS ERROR!!!"
+        assert False, "UNKNOWN OS ERROR!!!"
 
 def __main__():
     cls()
